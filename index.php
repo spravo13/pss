@@ -12,10 +12,7 @@
  */
 
 if ($_POST['submit'] == "Search!") {
-        echo "hey";
 
-} else {
-        $_SESSION['alert'] = "<div class=\"alert alert-danger\"><strong>Oh snap!</strong> Something went wrong... check the input and try again.</div>";
 }
 
 ?>
