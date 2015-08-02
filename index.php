@@ -1,8 +1,8 @@
 <?php
 /**
- * PHP Site Search
+ * Basic UI and layout for PHP Site Search
  *
- * PHP version 5.5
+ * PHP version 5.6.9
  *
  * @category File
  * @package  PSS
@@ -12,7 +12,11 @@
  */
 
 if ($_POST['submit'] == "Search!") {
-        
+        include_once$_SERVER['DOCUMENT_ROOT']."/search_process.php";
+        $query = $_POST['query'];
+        $url = $_POST['url'];
+        $max_results = $_POST['max_results'];
+        searchProcess($query, $url, $max_results);
 } else {
         
         ?>
